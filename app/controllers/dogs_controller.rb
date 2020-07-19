@@ -14,7 +14,8 @@ class DogsController < ApplicationController
       name: params[:name], 
       age: params[:age]
     )
-    render json: {dog: @dog}, status: :created
+    # render json: {dog: @dog}, status: :created
+    redirect_to "http://localhost:3001"
   end 
 
   def update 
